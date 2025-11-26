@@ -40,3 +40,22 @@
 4.	Username: nagiosadmin
 	Password: nagios
 5.docker stop nagiosdemo
+///
+Aws
+sudo apt update
+sudo apt-get install docker.io
+sudo apt install git
+sudo apt install nano            
+
+git clone ""
+nano Dockerfile
+FROM nginx:alpine
+COPY . /usr/share/nginx/html
+
+
+sudo docker build -t myapp .
+sudo docker run -d -p 80:80 mywebapp
+
+sudo docker ps
+sudo docker stop "cont"
+
